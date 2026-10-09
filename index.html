@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Areeba Imran — Portfolio</title>
+<meta name="description" content="Areeba Imran — BS Information Technology student building AI-powered applications, web experiences and designs with Python.">
+<meta name="theme-color" content="#F5F0E8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav" id="top">
+  <a class="brand" href="#home" aria-label="Areeba Imran — home">A<span>.</span>I</a>
+  <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu"><i></i><i></i></button>
+  <nav id="menu" class="menu">
+    <a href="#projects">Projects</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+<!-- 1. HERO -->
+<section class="hero" id="home">
+  <div class="hero-copy reveal">
+    <p class="eyebrow">Portfolio · BSIT Student</p>
+    <h1>Areeba <em>Imran</em></h1>
+    <p class="tagline">Turning ideas into digital experiences.</p>
+    <p class="disciplines">Python · Agentic AI · Web Development · Design</p>
+    <div class="cta">
+      <a class="btn btn-dark" href="#projects">View projects</a>
+      <a class="btn btn-line" href="#contact">Get in touch</a>
+    </div>
+  </div>
+
+  <div class="stage reveal" aria-label="Portrait of Areeba Imran with a rotating 3D object">
+    <div class="arch">
+      <img src="public/images/areeba-profile.png" alt="Areeba Imran" width="980" height="1228" fetchpriority="high">
+    </div>
+    <div class="ring" aria-hidden="true"></div>
+    <canvas id="three" aria-hidden="true"></canvas>
+    <!-- CSS 3D fallback, shown only if WebGL / Three.js is unavailable -->
+    <div class="cube-wrap" id="cube" aria-hidden="true" hidden>
+      <div class="cube">
+        <span class="f front"></span><span class="f back"></span>
+        <span class="f right"></span><span class="f left"></span>
+        <span class="f top"></span><span class="f bottom"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. PROJECTS -->
+<section class="section" id="projects">
+  <div class="section-head reveal">
+    <p class="eyebrow">Selected Projects</p>
+    <h2>Things I've been <em>building</em>.</h2>
+  </div>
+
+  <div class="grid">
+    <article class="card reveal">
+      <span class="num">01</span>
+      <h3>PTCL Packages Assistant</h3>
+      <p>A Streamlit application built around PTCL packages, available to try live.</p>
+      <div class="meta"><span class="chip">Streamlit</span><span class="chip">Python</span></div>
+      <a class="link" href="https://ptclpackegesassistant.streamlit.app/" target="_blank" rel="noopener noreferrer">Open live app <b>↗</b></a>
+    </article>
+
+    <article class="card reveal">
+      <span class="num">02</span>
+      <h3>Learn and Career Studio</h3>
+      <p>A Streamlit application for learning and career exploration, available to try live.</p>
+      <div class="meta"><span class="chip">Streamlit</span><span class="chip">Python</span></div>
+      <a class="link" href="https://learn-and-career.streamlit.app/" target="_blank" rel="noopener noreferrer">Open live app <b>↗</b></a>
+    </article>
+
+    <article class="card reveal">
+      <span class="num">03</span>
+      <h3>AreebaCare</h3>
+      <p>A Streamlit application available to try live.</p>
+      <div class="meta"><span class="chip">Streamlit</span><span class="chip">Python</span></div>
+      <a class="link" href="https://areebacare.streamlit.app/" target="_blank" rel="noopener noreferrer">Open live app <b>↗</b></a>
+    </article>
+
+    <article class="card reveal">
+      <span class="num">04</span>
+      <h3>SalesVista</h3>
+      <p>A Streamlit application available to try live.</p>
+      <div class="meta"><span class="chip">Streamlit</span><span class="chip">Python</span></div>
+      <a class="link" href="https://salesvista.streamlit.app/" target="_blank" rel="noopener noreferrer">Open live app <b>↗</b></a>
+    </article>
+
+    <article class="card reveal">
+      <span class="num">05</span>
+      <h3>MAILCRAFT</h3>
+      <p>A Streamlit application available to try live.</p>
+      <div class="meta"><span class="chip">Streamlit</span><span class="chip">Python</span></div>
+      <a class="link" href="https://mailcraft.streamlit.app/" target="_blank" rel="noopener noreferrer">Open live app <b>↗</b></a>
+    </article>
+
+    <article class="card card-dark reveal">
+      <span class="num">06</span>
+      <h3>VERITAS</h3>
+      <p class="sub">Digital Trust &amp; Safety Platform</p>
+      <p>A project focused on digital trust and safety.</p>
+      <span class="soon">Link coming soon</span>
+    </article>
+
+    <article class="card card-dark reveal">
+      <span class="num">07</span>
+      <h3>Writify Studio</h3>
+      <p class="sub">Multi-Agent AI Writing Platform</p>
+      <p>A multi-agent AI writing platform.</p>
+      <span class="soon">Link coming soon</span>
+    </article>
+  </div>
+</section>
+
+<!-- 3. ABOUT -->
+<section class="section about" id="about">
+  <div class="about-grid">
+    <div class="reveal">
+      <p class="eyebrow">About Me</p>
+      <h2>A student who learns <em>by building</em>.</h2>
+    </div>
+    <div class="about-text reveal">
+      <p>I'm a BS Information Technology student at the University of Agriculture Faisalabad, curious about how technology can make everyday tasks simpler and more creative.</p>
+      <p>My focus is on Generative AI and Agentic AI. I enjoy using Python to put these ideas into practical, AI-powered applications, and I'm still actively learning with every project I build.</p>
+      <p>Alongside software development, I care about how things look and feel — web development, UI/UX, graphic design and content creation all shape the way I approach digital experiences.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 4. SKILLS -->
+<section class="section" id="skills">
+  <div class="section-head reveal">
+    <p class="eyebrow">Skills</p>
+    <h2>Tools and <em>disciplines</em>.</h2>
+  </div>
+  <ul class="skills reveal">
+    <li>Python</li>
+    <li>Generative AI</li>
+    <li>Agentic AI</li>
+    <li>Multi-Agent Systems</li>
+    <li>Web Development</li>
+    <li>Streamlit</li>
+    <li>Graphic Design</li>
+    <li>Content Creation</li>
+    <li>UI/UX Design</li>
+  </ul>
+</section>
+
+<!-- 5. EDUCATION -->
+<section class="section" id="education">
+  <div class="edu reveal">
+    <p class="eyebrow">Education</p>
+    <h2>BS Information Technology</h2>
+    <p class="edu-school">University of Agriculture Faisalabad</p>
+  </div>
+</section>
+
+<!-- 6. CONTACT -->
+<section class="section contact" id="contact">
+  <div class="contact-inner reveal">
+    <p class="eyebrow">Contact</p>
+    <h2>Let's build something <em>thoughtful</em>.</h2>
+    <div class="contact-links" id="contact-links"></div>
+    <p class="contact-note" id="contact-note" hidden>Contact details will be added here soon. In the meantime, feel free to explore the live projects above.</p>
+  </div>
+</section>
+</main>
+
+<!-- 7. FOOTER -->
+<footer class="footer">
+  <p>© <span id="year"></span> Areeba Imran</p>
+  <a href="#top">Back to top ↑</a>
+</footer>
+
+<script src="config.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+<script src="script.js" defer></script>
+</body>
+</html>
